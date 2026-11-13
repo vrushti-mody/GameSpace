@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import './styles.css';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://theinsidestore.in';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: 'The Inside Store | Men’s Fashion & Accessories India', template: '%s | The Inside Store' },
-  description: 'Shop affordable men’s wear and fashion accessories online at The Inside Store. Discover everyday essentials and new arrivals with Pan India delivery.',
-  keywords: ['affordable men’s wear online India', 'men’s fashion accessories Mumbai', 'men’s clothing India', 'The Inside Store Pan India delivery'],
-  openGraph: { type: 'website', locale: 'en_IN', siteName: 'The Inside Store', title: 'The Inside Store | Wear your everyday', description: 'Modern men’s essentials, made for everyday.' },
+  title: { default: 'Game Space® eSports Cafe | Gaming Cafe in Matunga, Mumbai', template: '%s | Game Space® eSports Cafe' },
+  description: 'Game Space® eSports Cafe in Matunga East, Mumbai. PC and PS5 setups for casual and competitive play. Gaming since 2002.',
+  keywords: ['gaming cafe Matunga', 'esports cafe Mumbai', 'PC gaming cafe Mumbai', 'PS5 gaming cafe Matunga', 'Game Space eSports Cafe'],
+  openGraph: { type: 'website', locale: 'en_IN', siteName: 'Game Space® eSports Cafe', title: 'Game Space® eSports Cafe | Built by Gamers, Since 2002', description: 'PC and console setups for casual and competitive play in Matunga East, Mumbai.' },
   robots: { index: true, follow: true },
 };
 

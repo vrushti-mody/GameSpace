@@ -1,10 +1,10 @@
 import Storefront from '@/components/Storefront';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://theinsidestore.in';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 const businessSchema = {
   '@context': 'https://schema.org', '@graph': [
-    { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'The Inside Store', url: siteUrl, sameAs: ['https://www.instagram.com/the.insidestore/'], description: 'Men’s wear and accessories with Pan India delivery.' },
-    { '@type': 'Store', '@id': `${siteUrl}/#store`, name: 'The Inside Store', url: siteUrl, telephone: '+919619424627', parentOrganization: { '@id': `${siteUrl}/#organization` }, address: { '@type': 'PostalAddress', streetAddress: 'Unit No. A16, A Wing, Antop Hill Warehousing Complex, near Vidyalankar College Road, Wadala East, Antop Hill', addressLocality: 'Mumbai', addressRegion: 'Maharashtra', postalCode: '400037', addressCountry: 'IN' }, openingHoursSpecification: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(dayOfWeek => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: `https://schema.org/${dayOfWeek}`, opens: '09:00', closes: '20:30' })), description: 'Clothing and accessories store in Mumbai.' },
+    { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Game Space® eSports Cafe', url: siteUrl, sameAs: ['https://www.instagram.com/gamespace_cafe/', 'https://share.google/8w5QrhLdWfMvnVCI0'], description: 'Gaming cafe featuring PC and console setups for casual and competitive play.' },
+    { '@type': 'CafeOrCoffeeShop', '@id': `${siteUrl}/#cafe`, name: 'Game Space® eSports Cafe', url: siteUrl, telephone: '+91224094444', parentOrganization: { '@id': `${siteUrl}/#organization` }, address: { '@type': 'PostalAddress', streetAddress: 'Plot #471, Radha Bhuvan, Shop #9, Ground Floor, H, Adenwala Road, opposite King’s Circle Garden, Matunga East', addressLocality: 'Mumbai', addressRegion: 'Maharashtra', postalCode: '400019', addressCountry: 'IN' }, openingHoursSpecification: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].map(dayOfWeek => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: `https://schema.org/${dayOfWeek}`, opens: '08:00', closes: '23:00' })).concat([{ '@type': 'OpeningHoursSpecification', dayOfWeek: 'https://schema.org/Sunday', opens: '09:00', closes: '23:00' }]), description: 'Gaming cafe featuring PC and console setups for casual and competitive play. Open 365 days; gaming since 2002.' },
   ],
 };
 
