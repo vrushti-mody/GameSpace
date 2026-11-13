@@ -58,6 +58,7 @@ body{background:#090c0a;color:#ecf0e9}
 .info-intro h2,.info-social h2{color:#f4f7f0}
 .info-intro .info-kicker,.info-social .info-kicker{color:#a9f13b}
 .info-intro-copy>p,.info-social>div:first-child>p:not(.info-kicker){color:#bbc4b9}
+.info-social>div:first-child>p strong{color:#a9f13b}
 .info-text-link{color:#b4f84e}
 .info-why{background:#0b0f0c;color:#ecf0e9}
 .info-why-intro h2,.info-reasons h3{color:#f4f7f0}
